@@ -1,0 +1,118 @@
+html {
+  background: linear-gradient(270deg, #ffa61c, #b31cff, #ff1c6e);
+  background-size: 600% 600%;
+  -webkit-animation: gradientMod 15s ease infinite;
+  -moz-animation: gradientMod 15s ease infinite;
+  animation: gradientMod 15s ease infinite;
+}
+
+body {
+  padding:0px;
+}
+
+img {
+    max-width: 88%;
+    max-height: 100%;
+}
+
+#id-logo {
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+#imageDiv {
+  padding: 0px;
+  margin: 0px;
+}
+
+#particles-js {
+
+  height:1000px;
+  width: 85vw;
+  margin-top: 10vh;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30vh;
+  background-image: linear-gradient(#111, rgba(255,255,255,0));
+  border-radius: 2vw;
+}
+
+#title_digital {
+  display: inline;
+  width: inherit;
+  height: inherit;
+  text-align: center;
+  font-size: 15vw;
+  font-style: normal;
+  /*font-kerning: none;*/
+  color: #eee;
+  margin-left: 30%;
+  margin-right: 30%;
+  font-family: 'Libre Barcode 128 Text', cursive;
+}
+
+.perspectiveScroll {
+
+    animation-name: perspectiveScroll;
+    -webkit-animation-name: perspectiveScroll;
+
+    animation-duration: 1.5s;
+    -webkit-animation-duration: 1.5s;
+
+    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
+
+    visibility: visible !important;
+
+}
+
+/*--- Animations ---*/
+@-webkit-keyframes gradientMod {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes gradientMod {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes gradientMod {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+@keyframes scrollExpand {
+  from{ }
+  to{ }
+}
+
+@keyframes scrollDissolve {
+  from{ }
+  to{ }
+}
+
+
+/* */
+@keyframes perspectiveScroll {
+    0% {transform: translateY(-150%);}
+    50%{transform: translateY(8%);}
+    65%{transform: translateY(-4%);}
+    80%{transform: translateY(4%);}
+    95%{transform: translateY(-2%);}
+    100% {transform: translateY(0%);}
+}
+
+@-webkit-keyframes perspectiveScroll {
+    0% {transform: translateY(-150%);}
+    50%{transform: translateY(8%);}
+    65%{transform: translateY(-4%);}
+    80%{transform: translateY(4%);}
+    95%{transform: translateY(-2%);}
+    100% {transform: translateY(0%);}
+}

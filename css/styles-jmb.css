@@ -1,0 +1,38 @@
+
+*,:after,:before{box-sizing:border-box}
+html{
+  background-color:#ddd;
+}
+
+h1,h2,h3,h4,h5,h6,ul{
+  margin:0;
+  padding:0;
+  border:0;
+  vertical-align:baseline;
+}
+
+.list,h1,h2,h3,h4,h5,h6,ul{font-weight:700}
+.poster{vertical-align:middle}
+ul{list-style:none}
+
+body{
+  font-family:sans-serif;
+  font-size:1.5em;
+  line-height:1.2;
+}
+
+.list{font-size:1.25em}
+
+.poster{top:50%;left:50%;position:absolute}
+
+.poster{
+  transform:translate(-50%,-50%);
+  transform-origin:center center
+}
+
+.poster__content{
+  position:relative;
+  width:750px;
+  height:1050px;
+  overflow:hidden;
+  color:#000;}

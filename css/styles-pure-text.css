@@ -1,0 +1,97 @@
+html {
+  background: #353535;
+}
+
+a:link {text-decoration: none;}
+a:visited {text-decoration: none;}
+a:hover {text-decoration: none;}
+a:active {text-decoration: none;}
+
+button {
+  font-size: 3.3vh;
+  margin: 1vh;
+  padding: .8vh 1.5vh .8vh 1.5vh;
+  position: relative;
+  display: inline;
+  overflow: hidden;
+  border-width: 0;
+  outline: none;
+  border-radius: 1vw;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+
+  background-color: #e74c3c;
+  color: #fff;
+
+  transition: background-color .3s;
+}
+
+.btn .punc {
+  border-radius: 50%;
+}
+
+.btn:hover, .btn:focus {
+  background-color: #ef5350;
+}
+
+.btn > * {
+  position: relative;
+}
+
+.btn span {
+  display: block;
+  padding: 12px 24px;
+}
+
+.btn:before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  display: block;
+  width: 0;
+  padding-top: 0;
+
+  border-radius: 100%;
+
+  background-color: rgba(236, 240, 241, .3);
+
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.btn:active:before {
+  width: 120%;
+  padding-top: 120%;
+
+  transition: width .2s ease-out, padding-top .2s ease-out;
+}
+
+/*purple button styling*/
+.btn.purple {
+  background-color: #9c27b0;
+}
+
+.btn.purple:hover, .btn.purple:focus {
+  background-color: #ab47bc;
+}
+
+/*orange button styling*/
+.btn.orange {
+  background-color: #ff8f00;
+}
+
+.btn.orange:hover, .btn.orange:focus {
+  background-color: #ffa000;
+}
+
+/*punc/blue button styling*/
+.btn.punc {
+  background-color: #5c6bc0;
+}
+
+.btn.punc:hover, .btn.punc:focus {
+  background-color: #7986cb;
+}
